@@ -1,0 +1,82 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #f8cdda 0%, #f1f4f9 50%, #f8cdda 100%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative; /* For absolute positioning of child elements */
+    max-width: 1200px; /* Adjust as per your layout */
+  }
+  
+  .logo h1 {
+    font-size: 1.5em;
+    color: #a83f39;
+    line-height: 1.2;
+    margin: 0;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  
+  .logo p {
+    margin-top: 2em;
+    color: #666;
+  }
+  
+  .welcome h2 {
+    font-size: 3em; /* This is large and may need to be adjusted for smaller screens */
+    color: #333;
+    line-height: 1.2; /* Increase line height to prevent overlapping with the text below */
+    margin: 0; /* Reset margin */
+  }
+  
+  .welcome p {
+    margin-top: 2em; /* Increase margin to provide more space between the h2 and the paragraph */
+    color: #666;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 30px;
+    margin: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #a83f39; /* Match this color to your design */
+    transition: background-color 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn:hover {
+    background-color: #961e1b; /* Darker shade for hover effect */
+  }
+  
+  /* Add the media queries and other responsive design elements as per the previous example. */
+  @media (max-width: 768px) {
+    .container {
+        max-width: 600px;
+      }
+  }
+  
+  @media (max-width: 480px) {
+    
+    .container {
+        max-width: 100%;
+        padding: 20px;
+      }
+      .header h2 {
+        font-size: 1.8em;
+      }
+  }
+  

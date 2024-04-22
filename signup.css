@@ -1,0 +1,183 @@
+/* General styles and modal backdrop */
+body, html {
+   
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: rgba(40, 22, 74, 0.8); /* semi-transparent background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+  
+  .container {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  }
+  
+  /* Logo and description styles */
+  .logo h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .logo p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* Form styles */
+  .sign-up h2 {
+    color: #333;
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    color: #666;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="number"],
+  .form-group input[type="email"],
+  .form-group input[type="tel"],
+  .form-group input[type="password"],
+  .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+  
+  /* Button styles */
+  button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #FF5858, #F09819);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background: linear-gradient(45deg, #e05252, #e08915);
+  }
+  
+  /* Link to sign-in page */
+  .sign-up p {
+    text-align: center;
+    color: #666;
+  }
+  
+  .sign-up p a {
+    color: #FF5858;
+    text-decoration: none;
+  }
+  
+  /* Error message styles */
+  #password-error {
+    margin-top: 5px;
+    font-size: 12px;
+  }
+  /* Base styles here (Mobile First Approach) */
+
+/* Tablets (Portrait) */
+@media (min-width: 600px) {
+    .container {
+      padding: 50px;
+      width: 90%;
+      max-width: 600px;
+    }
+    
+    .logo h1 {
+      font-size: 28px;
+    }
+  
+    .logo p {
+      font-size: 16px;
+    }
+  }
+  
+  /* Tablets (Landscape) & Small Laptops */
+  @media (min-width: 768px) {
+    .container {
+      padding: 60px;
+      width: 85%;
+      max-width: 700px;
+    }
+  
+    .logo h1 {
+      font-size: 30px;
+    }
+  
+    .logo p {
+      font-size: 18px;
+    }
+  }
+  
+  /* Laptops */
+  @media (min-width: 992px) {
+    .container {
+      padding: 70px;
+      width: 80%;
+      max-width: 800px;
+    }
+    
+    .logo h1 {
+      font-size: 32px;
+    }
+  
+    .logo p {
+      font-size: 20px;
+    }
+  
+    .form-group label {
+      font-size: 16px;
+    }
+  
+    .form-group input[type="text"],
+    .form-group input[type="number"],
+    .form-group input[type="email"],
+    .form-group input[type="tel"],
+    .form-group input[type="password"],
+    .form-group select {
+      padding: 15px;
+      font-size: 14px;
+    }
+  
+    button {
+      padding: 20px;
+      font-size: 18px;
+    }
+  }
+  
+  /* Desktops */
+  @media (min-width: 1200px) {
+    .container {
+      padding: 80px;
+      width: 70%;
+      max-width: 1000px;
+    }
+  
+    .logo h1 {
+      font-size: 35px;
+    }
+  
+    .logo p {
+      font-size: 22px;
+    }
+  }
+  

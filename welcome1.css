@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: #f8f8f8;
+  color: #333;
+}
+
+header {
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h1 {
+  color: #5D6473;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #5D6473;
+  margin: 0 15px;
+}
+
+main {
+  padding: 30px;
+}
+
+.services, .consultation-types, .booking {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.service, .consultation-type, .booking-type {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service img, .consultation-type img, .booking-type img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+  object-fit: cover;
+}
+
+.service:hover, .consultation-type:hover, .booking-type:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+footer {
+  background: #5D6473;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer p {
+  margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+  .services, .consultation-types, .booking {
+      grid-template-columns: 1fr;
+  }
+
+  .menu a {
+      font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .services, .consultation-types, .booking {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1025px) {
+  .services, .consultation-types, .booking {
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.benefits-of-consultation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.benefit {
+  flex: 1 1 calc(50% - 30px);
+  background: #ffffff;
+  margin-bottom: 30px;
+  margin-left:200px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.benefits-of-consultation h2 {
+  width: 120%;
+  color: #5D6473;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 2em;
+}
+
+.benefits-of-consultation .benefit h3 {
+  color: #333333;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.benefits-of-consultation .benefit p {
+  color: #666666;
+  line-height: 1.6;
+  text-align: center;
+  padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+  .benefits-of-consultation .benefit {
+      flex-basis: 100%;
+  }
+  
+  .benefits-of-consultation h2 {
+      font-size: 1.5em;
+  }
+
+  .benefits-of-consultation .benefit h3 {
+      font-size: 1.2em;
+  }
+}
+

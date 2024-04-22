@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="find_doctors.css">
+    <title>Disease Dropdown</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Select a Disease:</h1>
+        <select id="disease-dropdown">
+            <option value="menstrual_cycle">Menstrual Cycle</option>
+            <option value="skin">Skin Diseases</option>
+            <option value="cold_cough_fever">Cold, Cough, Fever</option>
+            <option value="depression_anxiety">Depression and Anxiety</option>
+            <option value="weight_loss">Weight Loss</option>
+            <option value="gastric_problems">Gastric Problems</option>
+        </select>
+    </div>
+    <script>
+        document.getElementById('disease-dropdown').addEventListener('change', function() {
+            var selectedDisease = this.value;
+            window.open(selectedDisease + '.html', '_blank');
+        });
+    </script>
+</body>
+</html>

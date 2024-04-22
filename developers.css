@@ -1,0 +1,121 @@
+/* Basic styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header,
+  main,
+  footer {
+    padding: 20px;
+  }
+  
+  h1,
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+  img {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    margin: 5px;
+  }
+  
+  a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Navigation styles */
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    flex: 1;
+  }
+  
+  .menu {
+    display: flex;
+  }
+  
+  .menu a {
+    margin-left: 10px;
+  }
+  
+  /* Footer styles */
+  footer {
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Wrap footer links on smaller screens */
+    margin-bottom: 10px;
+  }
+  
+  /* Developers page styles */
+  .developers {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .developers ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .developers li {
+    margin-bottom: 10px;
+  }
+  
+  .developers p {
+    line-height: 1.5; /* Adjust line spacing for better readability */
+  }
+  
+  .developers a {
+    color: #007bff; /* Inherit link color from base styles */
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    header,
+    main,
+    footer {
+      padding: 10px;
+    }
+  
+    h1,
+    h2 {
+      font-size: 1.2rem;
+    }
+  
+    img {
+      max-width: 300px;
+    }
+  
+    .footer-content {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .menu a {
+      margin-left: 5px;
+    }
+  
+    .developers {
+      margin: 10px 0;
+    }
+  }
+  
